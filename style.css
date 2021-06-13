@@ -1,0 +1,183 @@
+
+body,p,span,h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Spartan', sans-serif;
+}
+.btn-primary {
+	color: #7d9af2;
+}
+img {
+    width: 100% !important;
+}
+
+/* header_section */
+.navbar-brand img {
+	width: 52% !important;
+	height: auto;
+}
+
+.total_header {
+	background: rgb(143, 139, 139) !important;
+	padding: 6px 0;
+}
+ul.head_menu li a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 23px 28px;
+	color: #111;
+	font-weight: 600;
+	font-size: 33px;
+}
+ul.head_menu li a::before {
+	content: "";
+	top: 105px;
+	left: 18px;
+	height: 7px;
+	width: 0;
+	position: absolute;
+	background: #000;
+}
+ul.head_menu li a:hover::before{
+    width: 75%;
+    transition: .5s;
+}
+.ul.head_menu li a:hover{}
+
+/* DropDown Menu Css */
+
+ul.head_menu li{
+    position: relative;
+}
+ul.head_menu li ul {
+	position: absolute;
+	width: 371px;
+	left: 0;
+	top: 100%;
+	background: #0695f5;
+	border-radius: 5px;
+	border: 26px solid #fafafa;
+	list-style: none;
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+	opacity: 0;
+	visibility: hidden;
+	transition: all .4s ease-in-out;
+	padding-left: 0px;
+}
+ul.head_menu li ul li{
+    flex-direction: column;
+}
+ul.head_menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 119%;
+}
+ul.head_menu li ul li a{}
+.btn-primary {
+	background: #fff !important;
+	border: #fff;
+	color: #3763eb;
+	font-weight: 500;
+	padding: 22px 49px;
+	border-radius: 50px;
+	font-size: 26px;
+	position: relative;
+	z-index: 1;
+	margin-left: 41px;
+}
+.btn-primary::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #111 !important;
+    color: #fff;
+    border-radius: 50px;
+    z-index: -1;
+    transition: .4s;
+}
+.btn-primary:hover::before{
+    width: 100%;
+}
+
+/* banner_img_section */
+
+
+/* .banner_img_section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+	width: 1024px;
+	height: 935px;
+	position: relative;
+	border-radius: 50%;
+	top: -210px;
+	left: -146px;
+	overflow: hidden;
+	z-index: -1;
+} */
+.banner_section {
+	overflow: hidden;
+	position: relative;
+	background: cover;
+	background-size: cover;
+	padding: 200px 0;
+}
+
+.banner-img {
+	position: ;
+	overflow: ;
+	background-size: cover;
+}
+.banner-img::before {
+	content: "";
+	display: block;
+	background-image: url('https://i.ibb.co/xYs7z0k/hero-image.jpg');
+	height: 1157px;
+	width: 1215px;
+	position: absolute;
+	border-radius: 50%;
+	background-position: center;
+	background-size: cover;
+	right: -232px;
+	top: -214px;
+	z-index: -1;
+}
+.banner_text h1 {
+	font-size: 70px;
+	font-weight: 700;
+	line-height: 101px;
+}
+.banner_text p {
+	font-size: 23px;
+	color: #606060;
+	padding-right: 25px;
+	padding-top: 40px;
+	line-height: 40px;
+}
+.banner_botton {
+	background: #3763eb !important;
+	border: #3763eb;
+	color: #fff;
+	font-weight: 500;
+	padding: 31px 49px;
+	border-radius: 50px;
+	font-size: 26px;
+	position: relative;
+	z-index: 1;
+	margin-left: 0;
+	margin-top: 41px;
+}
+.banner_botton::before{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #111 !important;
+    color: #fff;
+    border-radius: 50px;
+    z-index: -1;
+    transition: .4s;
+}
